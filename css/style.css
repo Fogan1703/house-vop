@@ -71,6 +71,9 @@ table {
 .nav-link:not(:last-child) {
   margin-right: 40px;
 }
+.nav-link:hover {
+  text-decoration: underline;
+}
 
 .about__title {
   font-family: "Playfair Display", sans-serif;
@@ -104,6 +107,9 @@ table {
   font-size: 18px;
   color: white;
   text-decoration: none;
+}
+.about__info-item-text:hover {
+  text-decoration: underline;
 }
 
 .district {
