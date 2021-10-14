@@ -1,0 +1,21 @@
+.video-block
+  padding-bottom: 180px
+
+  &-container
+    position: relative
+
+#video
+  max-width: 100%
+  cursor: pointer
+
+#video-play-button
+  opacity: 0
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  transition: 0.2s
+  pointer-events: none
+
+  &.video-play-button-pause
+    opacity: 1

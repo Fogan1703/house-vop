@@ -1,0 +1,38 @@
+@import "../fonts"
+
+.catalog__title
+  +title
+  margin-bottom: 100px
+
+.apartments-grid
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &-element
+    position: relative
+    max-width: 520px
+    margin-bottom: 30px
+
+    &:nth-child(odd)
+      margin-right: 30px
+
+    &-image
+      display: block
+      width: 100%
+
+    &-overlay
+      background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, $dark 100%)
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+
+    &-text
+      position: absolute
+      left: 10%
+      bottom: 10%
+      color: white
+      font-family: "Raleway", sans-serif
+      font-size: 24px

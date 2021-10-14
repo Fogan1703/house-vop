@@ -1,0 +1,414 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Post-No-Bills-Jaffna-SemiBold";
+  src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Post-No-Bills-Jaffna-SemiBold";
+  src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.about {
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/about/about-bg.jpg") no-repeat center top;
+  padding-bottom: 70px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  margin-bottom: 170px;
+}
+
+.nav {
+  display: flex;
+  margin: auto 0;
+}
+.nav-link {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+.nav-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.about__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 36px;
+  color: #D4C17F;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about__mouse-icon {
+  display: block;
+  margin: 0 auto 200px auto;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about__info-item {
+  display: flex;
+  align-items: center;
+}
+.about__info-item-image {
+  margin-right: 16px;
+}
+.about__info-item-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.district {
+  padding: 120px 0;
+}
+
+.district__features {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.district-feature-image {
+  display: block;
+  margin: 0 auto 50px auto;
+}
+.district-feature-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  line-height: 27px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Post-No-Bills-Jaffna-SemiBold";
+  src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.catalog__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 36px;
+  color: #D4C17F;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.apartments-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.apartments-grid-element {
+  position: relative;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+.apartments-grid-element:nth-child(odd) {
+  margin-right: 30px;
+}
+.apartments-grid-element-image {
+  display: block;
+  width: 100%;
+}
+.apartments-grid-element-overlay {
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.apartments-grid-element-text {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: "Post-No-Bills-Jaffna-SemiBold";
+  src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wanna-see {
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url("../img/wanna-see/wanna-see-bg.jpg") no-repeat center top;
+  padding: 180px 0;
+}
+
+.wanna-see-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wanna-see__text-group {
+  width: 49%;
+}
+
+.wanna-see__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 36px;
+  color: #D4C17F;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.wanna-see__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.wanna-see__form {
+  width: 49%;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wanna-see__name {
+  width: 47%;
+  margin-bottom: 35px;
+}
+
+.wanna-see__phone {
+  width: 47%;
+  margin-bottom: 35px;
+}
+
+.wanna-see__button {
+  width: 47%;
+}
+
+.wanna-see__form-text {
+  width: 47%;
+  margin: auto 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+.video-block {
+  padding-bottom: 180px;
+}
+.video-block-container {
+  position: relative;
+}
+
+#video {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+#video-play-button {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  pointer-events: none;
+}
+#video-play-button.video-play-button-pause {
+  opacity: 1;
+}
+
+.map-block {
+  padding-bottom: 180px;
+}
+
+.map {
+  width: 100%;
+  height: 358px;
+}
+
+@font-face {
+  font-family: "Post-No-Bills-Jaffna-SemiBold";
+  src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.have-questions {
+  padding-bottom: 180px;
+}
+
+.have-questions__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 36px;
+  color: #D4C17F;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.have-questions__form {
+  display: flex;
+  justify-content: space-between;
+}
+.have-questions__form * {
+  width: 24%;
+}
+
+.have-questions__form-text {
+  margin: auto 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #E7E7E7;
+}
+
+.footer {
+  background-color: #2D343C;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link, .footer-li {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.footer-li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer__email {
+  font-weight: bold;
+  color: #D4C17F;
+}
+
+.footer-icon:not(:last-child) {
+  margin-right: 20px;
+}
+
+body {
+  background-color: #242B33;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+}
+.logo-text {
+  font-family: "Post-No-Bills-Jaffna-SemiBold", sans-serif;
+  font-size: 36px;
+  display: block;
+}
+.logo-description {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  max-width: 215px;
+  height: 50px;
+  padding: 0 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.input:focus {
+  outline: white solid 2px;
+}
+.input::placeholder {
+  text-align: center;
+  color: #BEBEBE;
+  font-size: 14px;
+}
+
+button {
+  max-width: 255px;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: #D4C17F;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+button:focus {
+  outline: white solid 2px;
+}
+button:active {
+  outline: none;
+  border: white solid 2px;
+  transform: scale(0.95, 0.95);
+}
+
+/*# sourceMappingURL=style.css.map */

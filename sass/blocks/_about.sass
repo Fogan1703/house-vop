@@ -1,0 +1,53 @@
+@import "../fonts"
+
+.about
+  background: linear-gradient(180deg, $dark 11.98%, rgba(45, 52, 60, 0.38) 51.04%, $dark 92.19%), url("../img/about/about-bg.jpg") no-repeat center top
+  padding-bottom: 70px
+
+.header
+  display: flex
+  justify-content: space-between
+  padding: 40px 0
+  margin-bottom: 170px
+
+.nav
+  display: flex
+  margin: auto 0
+
+  &-link
+    color: white
+    font-family: "Raleway", sans-serif
+    font-size: 14px
+    letter-spacing: 0.1em
+    text-decoration: none
+
+    &:not(:last-child)
+      margin-right: 40px
+
+.about__title
+  +title
+  font-size: 48px
+  text-align: center
+  margin-bottom: 100px
+
+.about__mouse-icon
+  display: block
+  margin: 0 auto 200px auto
+
+.about__info
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+
+  &-item
+    display: flex
+    align-items: center
+
+    &-image
+      margin-right: 16px
+
+    &-text
+      font-family: "Raleway", sans-serif
+      font-size: 18px
+      color: white
+      text-decoration: none

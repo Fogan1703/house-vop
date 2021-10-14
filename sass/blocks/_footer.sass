@@ -1,0 +1,34 @@
+@import "../colors"
+
+.footer
+  background-color: #2D343C
+  padding-top: 60px
+  padding-bottom: 50px
+
+.footer-container
+  display: flex
+  justify-content: space-between
+
+.footer-link, .footer-li
+  color: white
+  font-family: "Raleway", sans-serif
+  font-size: 14px
+  letter-spacing: 0.1em
+
+.footer-li
+  &:not(:last-child)
+    margin-bottom: 15px
+
+.footer-link
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.footer__email
+  font-weight: bold
+  color: $accent
+
+.footer-icon
+  &:not(:last-child)
+    margin-right: 20px

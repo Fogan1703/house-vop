@@ -1,0 +1,68 @@
+@import "colors"
+@import "normalize"
+@import "fonts"
+
+@import "blocks/about"
+@import "blocks/district"
+@import "blocks/catalog"
+@import "blocks/wanna-see"
+@import "blocks/video"
+@import "blocks/map"
+@import "blocks/have-questions"
+@import "blocks/footer"
+
+body
+  background-color: $dark
+
+.container
+  max-width: 1100px
+  width: 100%
+  margin: 0 auto
+
+.logo
+  color: white
+  &-text
+    font-family: "Post-No-Bills-Jaffna-SemiBold", sans-serif
+    font-size: 36px
+    display: block
+  &-description
+    font-family: "Raleway", sans-serif
+    font-size: 12px
+    letter-spacing: 0.3em
+
+.input
+  background-color: rgba(255, 255, 255, 0.2)
+  border: none
+  max-width: 215px
+  height: 50px
+  padding: 0 20px
+  font-family: "Raleway", sans-serif
+  font-size: 16px
+  color: white
+
+  &:focus
+    outline: white solid 2px
+
+  &::placeholder
+    text-align: center
+    color: #BEBEBE
+    font-size: 14px
+
+button
+  max-width: 255px
+  height: 50px
+  font-family: "Raleway", sans-serif
+  color: white
+  background-color: $accent
+  border: none
+  text-align: center
+  font-size: 16px
+  font-weight: bold
+
+  &:focus
+    outline: white solid 2px
+
+  &:active
+    outline: none
+    border: white solid 2px
+    transform: scale(0.95, 0.95)
