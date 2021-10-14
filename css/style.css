@@ -350,7 +350,7 @@ table {
   color: #D4C17F;
 }
 
-.footer-icon:not(:last-child) {
+.footer-icon-link:not(:last-child) {
   margin-right: 20px;
 }
 
