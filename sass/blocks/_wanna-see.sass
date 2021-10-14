@@ -9,7 +9,7 @@
   justify-content: space-between
 
 .wanna-see__text-group
-  width: 49%
+  flex-basis: 49%
 
 .wanna-see__title
   +title
@@ -22,27 +22,42 @@
   color: white
 
 .wanna-see__form
-  width: 49%
+  flex-basis: 49%
   margin-top: auto
   display: flex
   flex-wrap: wrap
   justify-content: space-between
 
-.wanna-see__name
-  width: 47%
+.wanna-see__name, .wanna-see__phone
   margin-bottom: 35px
-
-.wanna-see__phone
-  width: 47%
-  margin-bottom: 35px
-
-.wanna-see__button
-  width: 47%
+  flex-basis: calc(50% - 55px)
 
 .wanna-see__form-text
-  width: 47%
   margin: auto 0
   text-align: center
   font-family: "Raleway", sans-serif
   font-size: 13px
   color: #E7E7E7
+
+.wanna-see__form-text, .wanna-see__button
+  flex-basis: calc(50% - 15px)
+
+@media (max-width: 1120px)
+  .wanna-see
+    padding: 100px 0
+
+@media (max-width: 1020px)
+  .wanna-see-container
+    flex-direction: column
+
+  .wanna-see__text-group
+    margin-bottom: 50px
+
+@media (max-width: 520px)
+  .wanna-see
+    & *
+      margin-bottom: 20px
+      flex-basis: 100%
+
+    &__form-text
+      order: -1

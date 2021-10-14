@@ -11,7 +11,7 @@
 
   &-element
     position: relative
-    max-width: 520px
+    max-width: 515px
     margin-bottom: 30px
 
     &:nth-child(odd)
@@ -36,3 +36,10 @@
       color: white
       font-family: "Raleway", sans-serif
       font-size: 24px
+
+@media (max-width: 1120px)
+  .apartments-grid-element
+    max-width: none
+    margin-right: 0
+    margin-bottom: 50px
+    flex-basis: 100%

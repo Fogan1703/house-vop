@@ -11,7 +11,6 @@
   margin-bottom: 170px
 
 .nav
-  display: flex
   margin: auto 0
 
   &-link
@@ -57,3 +56,33 @@
 
       &:hover
         text-decoration: underline
+
+@media (max-width: 1160px)
+  .nav-link:not(:last-child)
+    margin-right: 20px
+
+@media (max-width: 768px)
+  .header
+    justify-content: space-around
+    margin-bottom: 100px
+
+  .about__title
+    margin-bottom: 50px
+
+  .about__mouse-icon
+    margin-bottom: 100px
+
+  .nav
+    &-link
+      display: block
+
+      &:not(:last-child)
+        margin-right: 0
+        margin-bottom: 10px
+
+@media (max-width: 600px)
+  .about__info
+    flex-direction: column
+
+    &-item:not(:last-child)
+      margin-bottom: 20px

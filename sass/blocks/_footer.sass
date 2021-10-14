@@ -32,3 +32,32 @@
 .footer-icon-link
   &:not(:last-child)
     margin-right: 20px
+
+@media (max-width: 788px)
+  .footer-container
+    flex-wrap: wrap
+    justify-content: space-around
+
+  .footer-column
+    flex-basis: 34%
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+@media (max-width: 620px)
+  .footer-column
+    flex-basis: 100%
+    margin-left: 30px
+
+    &:not(:last-child)
+      margin-bottom: 25px
+
+  .footer-li
+    &:not(:last-child)
+      margin-bottom: 10px
+
+  .footer__logo
+    margin-bottom: 30px
+
+  .footer-socials
+    margin-top: 25px

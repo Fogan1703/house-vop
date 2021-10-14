@@ -58,7 +58,6 @@ table {
 }
 
 .nav {
-  display: flex;
   margin: auto 0;
 }
 .nav-link {
@@ -112,6 +111,41 @@ table {
   text-decoration: underline;
 }
 
+@media (max-width: 1160px) {
+  .nav-link:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
+  }
+
+  .about__mouse-icon {
+    margin-bottom: 100px;
+  }
+
+  .nav-link {
+    display: block;
+  }
+  .nav-link:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .about__info {
+    flex-direction: column;
+  }
+  .about__info-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .district {
   padding: 120px 0;
 }
@@ -134,6 +168,23 @@ table {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .district {
+    padding: 60px 0;
+  }
+
+  .district__features {
+    flex-wrap: wrap;
+  }
+
+  .district-feature {
+    flex-basis: 50%;
+    margin-bottom: 50px;
+  }
+  .district-feature-image {
+    margin-bottom: 20px;
+  }
+}
 @font-face {
   font-family: "Post-No-Bills-Jaffna-SemiBold";
   src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
@@ -155,7 +206,7 @@ table {
 }
 .apartments-grid-element {
   position: relative;
-  max-width: 520px;
+  max-width: 515px;
   margin-bottom: 30px;
 }
 .apartments-grid-element:nth-child(odd) {
@@ -182,6 +233,14 @@ table {
   font-size: 24px;
 }
 
+@media (max-width: 1120px) {
+  .apartments-grid-element {
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 50px;
+    flex-basis: 100%;
+  }
+}
 @font-face {
   font-family: "Post-No-Bills-Jaffna-SemiBold";
   src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
@@ -199,7 +258,7 @@ table {
 }
 
 .wanna-see__text-group {
-  width: 49%;
+  flex-basis: 49%;
 }
 
 .wanna-see__title {
@@ -218,29 +277,19 @@ table {
 }
 
 .wanna-see__form {
-  width: 49%;
+  flex-basis: 49%;
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.wanna-see__name {
-  width: 47%;
+.wanna-see__name, .wanna-see__phone {
   margin-bottom: 35px;
-}
-
-.wanna-see__phone {
-  width: 47%;
-  margin-bottom: 35px;
-}
-
-.wanna-see__button {
-  width: 47%;
+  flex-basis: calc(50% - 55px);
 }
 
 .wanna-see__form-text {
-  width: 47%;
   margin: auto 0;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -248,6 +297,33 @@ table {
   color: #E7E7E7;
 }
 
+.wanna-see__form-text, .wanna-see__button {
+  flex-basis: calc(50% - 15px);
+}
+
+@media (max-width: 1120px) {
+  .wanna-see {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 1020px) {
+  .wanna-see-container {
+    flex-direction: column;
+  }
+
+  .wanna-see__text-group {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .wanna-see * {
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+  .wanna-see__form-text {
+    order: -1;
+  }
+}
 .video-block {
   padding-bottom: 180px;
 }
@@ -273,6 +349,11 @@ table {
   opacity: 1;
 }
 
+@media (max-width: 788px) {
+  .video-block {
+    padding-bottom: 80px;
+  }
+}
 .map-block {
   padding-bottom: 180px;
 }
@@ -282,6 +363,11 @@ table {
   height: 358px;
 }
 
+@media (max-width: 788px) {
+  .map-block {
+    padding-bottom: 80px;
+  }
+}
 @font-face {
   font-family: "Post-No-Bills-Jaffna-SemiBold";
   src: url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.svg#Post-No-Bills-Jaffna-SemiBold") format("svg"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("../fonts/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
@@ -290,6 +376,12 @@ table {
 }
 .have-questions {
   padding-bottom: 180px;
+}
+.have-questions__name, .have-questions__phone {
+  flex-basis: calc(25% - 70px);
+}
+.have-questions__form-text, .have-questions__button {
+  flex-basis: calc(25% - 30px);
 }
 
 .have-questions__title {
@@ -304,9 +396,6 @@ table {
   display: flex;
   justify-content: space-between;
 }
-.have-questions__form * {
-  width: 24%;
-}
 
 .have-questions__form-text {
   margin: auto 0;
@@ -316,6 +405,51 @@ table {
   color: #E7E7E7;
 }
 
+@media (max-width: 940px) {
+  .have-questions {
+    padding-bottom: 80px;
+  }
+
+  .have-questions__form {
+    flex-wrap: wrap;
+  }
+  .have-questions__form * {
+    margin-right: 0 !important;
+  }
+
+  .have-questions__form-text {
+    flex-basis: calc(50% - 15px);
+    order: 1;
+    margin: auto 0;
+  }
+
+  .have-questions__button {
+    flex-basis: calc(50% - 15px);
+    order: 1;
+  }
+
+  .have-questions__name {
+    flex-basis: calc(50% - 55px);
+    margin-bottom: 35px;
+  }
+
+  .have-questions__phone {
+    flex-basis: calc(50% - 55px);
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 520px) {
+  .have-questions__form * {
+    flex-basis: 100%;
+  }
+  .have-questions__form *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .have-questions__form-text {
+    order: 0;
+  }
+}
 .footer {
   background-color: #2D343C;
   padding-top: 60px;
@@ -354,16 +488,54 @@ table {
   margin-right: 20px;
 }
 
+@media (max-width: 788px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-column {
+    flex-basis: 34%;
+  }
+  .footer-column:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 620px) {
+  .footer-column {
+    flex-basis: 100%;
+    margin-left: 30px;
+  }
+  .footer-column:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .footer-li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .footer-socials {
+    margin-top: 25px;
+  }
+}
 body {
   background-color: #242B33;
 }
 
 .container {
   max-width: 1100px;
-  width: 100%;
   margin: 0 auto;
 }
 
+@media (max-width: 1160px) {
+  .container {
+    margin: 0 20px;
+  }
+}
 .logo {
   color: white;
 }
@@ -381,7 +553,6 @@ body {
 .input {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  max-width: 215px;
   height: 50px;
   padding: 0 20px;
   font-family: "Raleway", sans-serif;
@@ -398,7 +569,6 @@ body {
 }
 
 button {
-  max-width: 255px;
   height: 50px;
   font-family: "Raleway", sans-serif;
   color: white;
